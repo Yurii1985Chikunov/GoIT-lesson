@@ -123,16 +123,15 @@
 // Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
 // і поверніть її з функції.
 
-function getNumbers(min, max) {
-  let sumOfEvenNumbers = 0;
+//function getNumbers(min, max) {
+//let sumOfEvenNumbers = 0;
 
-  for (let i = max; i >= min; i--) {
-    console.log(i);
-    if (i % 2 === 0) {
-      sumOfEvenNumbers += i;
-    }
-  }
-  return sumOfEvenNumbers;
-}
-
-const sum = getNumbers(5, 10);
+//for (let i = max; i >= min; i--) {
+//console.log(i);
+//if (i % 2 === 0) {
+//sumOfEvenNumbers += i;
+//}
+//}
+//return sumOfEvenNumbers;
+//}
+//const sum = getNumbers(5, 10);
