@@ -367,63 +367,63 @@
 
 //
 
-const Transction = {
-  DEPOSIT: 'deposit',
-  WITHDRAFT: 'withdraft',
-};
+// const Transction = {
+//   DEPOSIT: 'deposit',
+//   WITHDRAFT: 'withdraft',
+// };
 
-const account = {
-  //
-  balanse: 0,
-  //
-  transaction: [],
-  //
-  createTransaction(amount, type) {
-    const obj = {
-      id: amount,
-      amount,
-      type,
-    };
-    return obj;
-  },
-  //
-  deposit(amount) {
-    this.balanse += amount;
-    const transaction = this.createTransaction(amount, Transction.DEPOSIT);
-  },
-  //
-  withdraft(amount) {
-    if (this.balanse < amount) {
-      console.log('Not money');
-    }
-    this.balanse -= amount;
-    const transation = this.createTransaction(amount, Transction.WITHDRAFT);
-    this.transaction.push(transaction);
-  },
-  //
-  getBalanse() {
-    return this.balanse;
-  },
-  //
-  getTransactionDetails(id) {
-    for (const item of this.transaction) {
-      if (item.id === id) {
-        return item;
-      }
-    }
-    return 'Hohoho';
-  },
-  //
-  getTransactionTotal(type) {
-    let total = 0;
-    for (const item of this.transaction) {
-      if (item.type === type) {
-        total += item.amount;
-      }
-    }
-    return total;
-  },
-};
+// const account = {
+//   //
+//   balanse: 0,
+//   //
+//   transaction: [],
+//   //
+//   createTransaction(amount, type) {
+//     const obj = {
+//       id: amount,
+//       amount,
+//       type,
+//     };
+//     return obj;
+//   },
+//   //
+//   deposit(amount) {
+//     this.balanse += amount;
+//     const transaction = this.createTransaction(amount, Transction.DEPOSIT);
+//   },
+//   //
+//   withdraft(amount) {
+//     if (this.balanse < amount) {
+//       console.log('Not money');
+//     }
+//     this.balanse -= amount;
+//     const transation = this.createTransaction(amount, Transction.WITHDRAFT);
+//     this.transaction.push(transaction);
+//   },
+//   //
+//   getBalanse() {
+//     return this.balanse;
+//   },
+//   //
+//   getTransactionDetails(id) {
+//     for (const item of this.transaction) {
+//       if (item.id === id) {
+//         return item;
+//       }
+//     }
+//     return 'Hohoho';
+//   },
+//   //
+//   getTransactionTotal(type) {
+//     let total = 0;
+//     for (const item of this.transaction) {
+//       if (item.type === type) {
+//         total += item.amount;
+//       }
+//     }
+//     return total;
+//   },
+// };
 // account.deposit(300);
 // account.deposit(100);
 
