@@ -49,3 +49,38 @@
 // };
 
 //!==============================================
+
+// function getLength(array) {
+//   const sumbol = array.join('');
+//   return sumbol.length;
+// }
+
+// console.log(getLength(['Mango', 'hurries', 'to', 'the', 'train']));
+
+//
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const words = message.split(' '); // розділяємо рядок на масив слів
+//   const totalPrice = words.length * pricePerWord; // множимо кількість слів на ціну
+//   return totalPrice;
+// }
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const words = message.split(' ');
+//   const totalPrice = words.length * pricePerWord;
+//   return totalPrice;
+// }
+
+// console.log(calculateEngravingPrice('JavaScript is in my blood', 10));
+
+// function getSlice(array, value) {
+//   const index = array.indexOf(value);
+//   if (index === -1) {
+//     return [];
+//   }
+//   return array.slice(0, index + 1);
+// }
+
+// console.log(getSlice(['Mango', 'Poly', 'Ajax'], 'Poly'));
+
+//
